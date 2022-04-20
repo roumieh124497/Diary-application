@@ -1,0 +1,90 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 500px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 150px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 7px;
+  background-color: salmon;
+  z-index: 2;
+}
+
+.form h2 {
+  width: 80px;
+  padding: 7px;
+  margin: 0 auto 0 auto;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inputContainer label {
+  font-size: 20px;
+}
+.inputContainer input {
+  padding: 11px;
+}
+
+.btns {
+  margin: 40px auto 30px auto;
+  text-align: center;
+}
+
+.btns button {
+  padding: 12px;
+  border-style: none;
+  width: 100px;
+  background-color: rgb(251, 80, 61);
+  border-radius: 4px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btns button:hover {
+  background-color: rgb(250, 159, 149);
+}
+
+.error {
+  background-color: rgb(248, 106, 106);
+  padding: 12px;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 711px) {
+  .form {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .form {
+    width: 500px;
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .form {
+    width: 400px;
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 421px) {
+  .form {
+    width: 300px;
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 306px) {
+  .form {
+    width: 250px;
+    margin-top: 80px;
+  }
+}

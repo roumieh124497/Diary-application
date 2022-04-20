@@ -1,0 +1,13 @@
+.mainContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  margin-top: 150px;
+  text-align: center;
+  background-color: salmon;
+  width: 200px;
+  padding: 12px;
+  border-radius: 7px;
+  box-shadow: 0 0 5px 15px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.header {
+  width: 70%;
+  background: salmon;
+  /* padding: px; */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.navLists {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navList {
+  list-style: none;
+  font-size: 40px;
+}
+
+.appName {
+  list-style: none;
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+
+.navList img {
+  width: 80px;
+  height: 80px;
+}
+
+.navList a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 680px) {
+  .header {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 442px) {
+  .appName {
+    font-size: 35px;
+  }
+  .navList img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .navList {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .appName {
+    font-size: 30px;
+  }
+  .navList img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .navList {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 295px) {
+  .appName {
+    font-size: 27px;
+  }
+  .navList img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .navList {
+    font-size: 27px;
+  }
+}

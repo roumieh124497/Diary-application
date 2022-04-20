@@ -1,0 +1,317 @@
+.header {
+  width: 70%;
+  background: salmon;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 2;
+  height: 94px;
+}
+
+.navLists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navList {
+  list-style: none;
+}
+
+.navList img {
+  width: 90px;
+  height: 90px;
+}
+
+.navList ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.navList ul li {
+  list-style: none;
+  font-size: 20px;
+  color: black;
+}
+
+.navList ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.8s;
+  border-bottom: 2px solid salmon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.navList ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
+.navList ul li a img {
+  width: 30px;
+  height: 30px;
+}
+.navList ul li button {
+  background-color: salmon;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.8s;
+  border-bottom: 2px solid salmon;
+}
+.navList ul li button:hover {
+  border-bottom: 2px solid black;
+}
+
+/* drop down setting and logout */
+.dropDownContainer {
+  background-color: salmon;
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  position: absolute;
+  right: 19%;
+  margin-top: -500px;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 2;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dropDownContainer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.dropDownContainer ul li {
+  list-style: none;
+  margin-top: 20px;
+}
+.dropDownContainer ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.8s;
+  border-bottom: 2px solid salmon;
+  font-size: 20px;
+}
+.dropDownContainer ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
+.dropDownContainer ul li button {
+  background-color: salmon;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.8s;
+  border-bottom: 2px solid salmon;
+}
+.dropDownContainer ul li button:hover {
+  border-bottom: 2px solid black;
+}
+
+/* drop down diary container styles */
+
+.dropDownDiaryContainer {
+  background-color: salmon;
+  width: 250px;
+  height: 230px;
+  border-radius: 8px;
+  position: absolute;
+  right: 31%;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  margin-top: -500px;
+  opacity: 0;
+
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+.dropDownDiaryContainer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.dropDownDiaryContainer ul li {
+  list-style: none;
+  margin-top: 20px;
+}
+.dropDownDiaryContainer ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.8s;
+  border-bottom: 2px solid salmon;
+  font-size: 20px;
+}
+.dropDownDiaryContainer ul li a:hover {
+  border-bottom: 2px solid black;
+}
+/* drop down notification */
+.notificationDropDown {
+  width: 270px;
+  height: 250px;
+  background-color: salmon;
+  border-radius: 7px;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 2;
+  position: absolute;
+  right: 36%;
+  top: -500px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  overflow-x: hidden;
+}
+.notificationDropDown::-webkit-scrollbar {
+  background-color: #f85e05;
+  border-radius: 7px;
+  width: 12px;
+}
+.notificationDropDown::-webkit-scrollbar-thumb {
+  background-color: #b20600;
+  border-radius: 7px;
+}
+
+.notificationDropDown div {
+  padding: 7px;
+  border-radius: 4px;
+  width: 240px;
+  color: black;
+  font-weight: 600;
+  background-color: rgb(255, 67, 46);
+  position: relative;
+  word-wrap: break-word;
+}
+
+.removeNotificationButton {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: rgb(255, 67, 46);
+  border-style: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+}
+
+.removeNotificationButton img {
+  width: 12px;
+  height: 12px;
+}
+.navList ul li button img {
+  width: 15px;
+  height: 15px;
+}
+
+.navList ul li button .myImage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.navList ul li button .myNotification {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 1187px) {
+  /* .dropDownContainer {}
+  .dropDownDiaryContainer {}
+  .notificationDropDown{} */
+  .notificationDropDown {
+    right: 40%;
+  }
+}
+@media screen and (max-width: 747px) {
+  .dropDownContainer {
+    right: 7%;
+  }
+  .dropDownDiaryContainer {
+    right: 15%;
+  }
+  .notificationDropDown {
+    right: 20%;
+  }
+}
+@media screen and (max-width: 747px) {
+  .notificationDropDown {
+    right: 17%;
+  }
+}
+@media screen and (max-width: 368px) {
+  .notificationDropDown {
+    right: 8%;
+  }
+}
+@media screen and (max-width: 331px) {
+  .notificationDropDown {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .navList ul {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 782px) {
+  .navList ul {
+    gap: 10px;
+  }
+  .header {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 747px) {
+  .nameUser {
+    display: none;
+  }
+  .navList ul {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 524px) {
+  .navList ul {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 389px) {
+  .navList img {
+    width: 70px;
+    height: 70px;
+  }
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header {
+    width: 95%;
+  }
+}

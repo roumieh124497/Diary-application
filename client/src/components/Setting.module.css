@@ -1,0 +1,147 @@
+.MessageBoxMainContainer {
+  width: 760px;
+  height: 550px;
+  background-color: salmon;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+  box-shadow: 0 0 15px 9px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 7px;
+  overflow-y: scroll;
+}
+
+.MessageBoxMainContainer::-webkit-scrollbar {
+  background-color: rgb(251, 104, 87);
+  border-radius: 4px;
+}
+.MessageBoxMainContainer::-webkit-scrollbar-thumb {
+  background-color: rgb(245, 77, 58);
+  border-radius: 4px;
+}
+
+.titleIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.titleIconContainer img {
+  width: 40px;
+  height: 40px;
+}
+.profileAccountSettingMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.btnsContainer {
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+}
+
+.btnsContainer button {
+  border-style: none;
+  padding: 15px;
+  background-color: #3e3252;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.btnsContainer button:hover {
+  background-color: #af92e0;
+}
+
+.formContainer form {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.imageContainer img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.textFieldContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 45%;
+}
+
+.deleteAcountContainer {
+  margin-top: 40px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.inputFieldFullName {
+  width: 350px;
+}
+.changePassowrdInputs {
+  width: 70%;
+  padding: 12px;
+  border-style: none;
+  border-radius: 3px;
+  outline-color: rgb(252, 93, 76);
+  margin-top: -20px;
+}
+@media screen and (max-width: 790px) {
+  .MessageBoxMainContainer {
+    width: 90%;
+    height: 550px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 675px) {
+  .inputFieldFullName {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 613px) {
+  .formContainer form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .settingContainer {
+    margin-top: 20px;
+  }
+  .inputFieldFullName {
+    width: 240px;
+  }
+  .textFieldContainer {
+    margin-top: -60px;
+  }
+
+  .changePassowrdInputs {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 463px) {
+  .changePassowrdInputs {
+    width: 100%;
+  }
+}
