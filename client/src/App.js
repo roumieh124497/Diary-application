@@ -17,7 +17,7 @@ function App() {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    setSocket(io.connect('http://localhost:5000/'));
+    setSocket(io.connect('https://obscure-dusk-03088.herokuapp.com/'));
   }, []);
 
   useEffect(() => {
